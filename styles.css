@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+:root {
+  --main-color: #60ddc4;
+  --main-color2: #ffffff;
+  --main-color3: #5bf236;
+  --box-shadow-color: rgb(126, 245, 126);
+  --btn-color: #b2ff9e;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  background-color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  background-color: var(--main-color2);
+  color: var(--main-color);
+  box-shadow: 0 0 15px var(--box-shadow-color);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  height: 50vh;
+}
+
+#result {
+  font-size: 35px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color3);
+  border-radius: 5px;
+  text-align: center;
+  width: 150vw;
+  margin: 2px;
+}
+
+.numbersRow {
+
+  color: var(--main-color3);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 15px var(--box-shadow-color);
+}
+
+.multTable {
+  font-size: 36px;
+  color: var(--main-color3);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+}
+
+#calculator{
+  font-size:  20px;
+}
+
+.button,
+#calculator {
+  color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.button:hover,
+#calculator:hover {
+  background-color: var(--main-color3);
+  color: var(--main-color2);
+}
